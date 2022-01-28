@@ -3,7 +3,7 @@ import time
 import moonlight
 
 server = moonlight.moonlight()
-adbPath = "C:\\Release\\adb"
+adbPath = "C:\\adb\\adb"
 deviceDict={"ServerPort":"ServerIP"}
 
 deviceNum = 1

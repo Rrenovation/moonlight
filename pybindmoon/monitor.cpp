@@ -3,7 +3,7 @@
 
 monitor::monitor(/* args */) : MianthreadExit(false)
 {
-    logs::info("monitor is init !");
+    logs::info("monitor init !");
 }
 
 monitor::~monitor()

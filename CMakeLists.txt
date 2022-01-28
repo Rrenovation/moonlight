@@ -10,7 +10,6 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(PYBIND11_PYTHON_VERSION 3.4)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
 #  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SAFESEH:NO")
@@ -23,12 +22,23 @@ if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
   set(Qt5_DIR C:\\qt5_static\\lib\\cmake\\Qt5) # Statically link patch
 	include_directories(${PROJECT_SOURCE_DIR}\\thrid_party\\ffmpeg_new\\include)
 	link_directories(${PROJECT_SOURCE_DIR}\\thrid_party\\ffmpeg_new\\lib)
-  include_directories(${PROJECT_SOURCE_DIR}\\thrid_party\\spdlog\\include)
-	link_directories(${PROJECT_SOURCE_DIR}\\thrid_party\\spdlog\\lib) 
 endif()
 
 find_package(Qt5 COMPONENTS Core Network AxContainer REQUIRED)
-find_package(pybind11 CONFIG)
+
+include(FetchContent)
+
+FetchContent_Declare(
+    pybind11
+    GIT_REPOSITORY https://github.com/pybind/pybind11
+    GIT_TAG v2.9.0)
+FetchContent_MakeAvailable(pybind11)
+
+FetchContent_Declare(
+    spdlog
+    GIT_REPOSITORY https://github.com/gabime/spdlog.git
+    GIT_TAG v1.9.2)
+FetchContent_MakeAvailable(spdlog)
 
 
 aux_source_directory(${PROJECT_SOURCE_DIR} SrcList)

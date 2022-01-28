@@ -55,7 +55,7 @@ light moonlight::getLight(std::string deviceName)
         monitors->pushDevice(device);
         deviceList[deviceN] = device;
         server->pushDevice(dynamic_cast<Device *>(device));
-        logs::info("new device: " + deviceName +" well be connect");
+        logs::info("New device: " + deviceName +" well be connect");
     }
     return light(deviceList[deviceN]);
 }

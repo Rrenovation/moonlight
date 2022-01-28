@@ -14,3 +14,35 @@
 [2022-01-28 12:04:56.846] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
 [2022-01-28 12:04:58.786] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
 [2022-01-28 12:04:58.894] [moonlight] [info] 1.12.225.194:5555: connected
+[2022-01-28 15:46:58.193] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-01-28 15:46:58.193] [moonlight] [info] moonlight init !
+[2022-01-28 15:46:58.193] [moonlight] [info] moonlight thread is running !
+[2022-01-28 15:46:58.193] [moonlight] [info] monitor is init !
+[2022-01-28 15:46:58.224] [moonlight] [info] monitor thread is running !
+[2022-01-28 15:46:59.208] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
+[2022-01-28 15:47:03.398] [moonlight] [info] 1.12.225.194:5555: connected
+[2022-01-28 15:47:08.401] [moonlight] [info] 1.12.225.194:5555 connecting time 59
+[2022-01-28 15:47:47.326] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-01-28 15:47:47.326] [moonlight] [info] moonlight init !
+[2022-01-28 15:47:47.326] [moonlight] [info] moonlight thread is running !
+[2022-01-28 15:47:47.326] [moonlight] [info] monitor is init !
+[2022-01-28 15:47:47.326] [moonlight] [info] monitor thread is running !
+[2022-01-28 15:47:48.358] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
+[2022-01-28 15:47:49.405] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
+[2022-01-28 15:47:49.499] [moonlight] [info] 1.12.225.194:5555: connected
+[2022-01-28 15:56:46.128] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-01-28 15:56:46.128] [moonlight] [info] moonlight init !
+[2022-01-28 15:56:46.128] [moonlight] [info] moonlight thread is running !
+[2022-01-28 15:56:46.128] [moonlight] [info] monitor init !
+[2022-01-28 15:56:46.175] [moonlight] [info] monitor thread is running !
+[2022-01-28 15:56:47.191] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
+[2022-01-28 15:56:49.692] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
+[2022-01-28 15:56:49.708] [moonlight] [info] 1.12.225.194:5555: connected
+[2022-01-28 16:20:04.625] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-01-28 16:20:04.625] [moonlight] [info] moonlight init !
+[2022-01-28 16:20:04.625] [moonlight] [info] moonlight thread is running !
+[2022-01-28 16:20:04.625] [moonlight] [info] monitor init !
+[2022-01-28 16:20:04.656] [moonlight] [info] monitor thread is running !
+[2022-01-28 16:20:05.718] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
+[2022-01-28 16:20:09.140] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
+[2022-01-28 16:20:09.218] [moonlight] [info] 1.12.225.194:5555: connected
