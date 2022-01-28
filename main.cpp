@@ -2,7 +2,6 @@
 #include <pybind11/pybind11.h>
 #include "pybindmoon/moonlight.h"
 #include "pybindmoon/light.h"
-#include "pybindmoon/log.hpp"
 namespace py = pybind11;
 
 PYBIND11_MODULE(moonlight, m)

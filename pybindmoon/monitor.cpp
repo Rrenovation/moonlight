@@ -1,5 +1,5 @@
 #include "monitor.h"
-#include "log.hpp"
+#include "../log/log.hpp"
 
 monitor::monitor(/* args */) : MianthreadExit(false)
 {
@@ -19,7 +19,7 @@ monitor::~monitor()
 
 void monitor::run()
 {
-    logs::info("monitor thread  is running !");
+    logs::info("monitor thread is running !");
     while (!MianthreadExit)
     {
         for (auto device : deviceList)
@@ -45,8 +45,11 @@ void monitor::run()
                     }
                     msleep(100);
                 }
-                conectTimeList[device->getDeviceName()]--;
-                logs::info(deviceName.toStdString() + " connecting time {:d}", conectTimeList[device->getDeviceName()]);
+                if(!device->getStatus())
+                {
+                    conectTimeList[device->getDeviceName()]--;
+                    logs::info(deviceName.toStdString() + " connecting time {:d}", conectTimeList[device->getDeviceName()]);
+                }
             }
 
             if (device->getReStart())

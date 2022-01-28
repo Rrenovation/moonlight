@@ -4,6 +4,7 @@
 #include "./decoder/stream.h"
 #include "./decoder/videosocket.h"
 #include "./controller/controller.h"
+#include "../log/log.hpp"
 
 #define DEVICE_NAME_FIELD_LENGTH 128
 
@@ -37,14 +38,14 @@ void Server::onNewConnect()
                 auto device = deviceList[deviceName];
                 if (device != Q_NULLPTR)
                 {
-                    qInfo() << "New" << deviceName << "Width:" << size.width() << "Height:" << size.height() << "connected";
+                    logs::info("New " + deviceName.toStdString() + " Width: {:d} Height: {:d} connected !", size.width(), size.height());
                     device->setVideoSocket(videoSocket);
                     LastDevName = deviceName;
                     return;
                 }
             }
         }
-        qInfo("The connection is not a scrcpy device or the device is not in the device list !");
+        logs::info("The connection is not a scrcpy device or the device is not in the device list !");
         mServer->setIsVideoSocket(true);
         videoSocket->disconnect();
         videoSocket->close();
@@ -76,7 +77,7 @@ bool Server::readInfo(VideoSocket *videoSocket, QString &deviceName, QSize &size
     qint64 len = videoSocket->read((char *)buf, sizeof(buf));
     if (len < DEVICE_NAME_FIELD_LENGTH + 4)
     {
-        qInfo("Could not retrieve device information");
+        logs::info("Could not retrieve device information");
         return false;
     }
     buf[DEVICE_NAME_FIELD_LENGTH - 1] = '\0'; // in case the client sends garbage

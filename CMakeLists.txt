@@ -32,6 +32,7 @@ find_package(pybind11 CONFIG)
 
 
 aux_source_directory(${PROJECT_SOURCE_DIR} SrcList)
+aux_source_directory(${PROJECT_SOURCE_DIR}/log Logs)
 aux_source_directory(${PROJECT_SOURCE_DIR}/lewone Lewone)
 aux_source_directory(${PROJECT_SOURCE_DIR}/scrcpy DeviceList)
 aux_source_directory(${PROJECT_SOURCE_DIR}/pybindmoon PybindList)
@@ -40,13 +41,14 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/scrcpy/controller ControllerList)
 
 
 pybind11_add_module(moonlight
-    SHARED 
+    SHARED
+    ${Logs}
+    ${Lewone}
     ${SrcList}
     ${DeviceList}
     ${PybindList}
     ${DecoderList}
     ${ControllerList}
-    ${Lewone}
 )
 
 target_link_libraries(moonlight PUBLIC Qt5::Core Qt5::Network Qt5::AxContainer avcodec avformat avutil swscale spdlog)

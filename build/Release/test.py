@@ -2,38 +2,45 @@
 import time
 import moonlight
 
-#adbPath = "C:\\Users\\Administrator\\Documents\\code\\moonlight\\build\Release\\adb"
-adbPath = "C:\\Release\\adb"
-deviceName = "1.12.225.194:5555"
 server = moonlight.moonlight()
+adbPath = "C:\\Release\\adb"
+deviceDict={"ServerPort":"ServerIP"}
 
+deviceNum = 1
+deviceList = [
+    "1.12.225.194:5555",
+    "1.12.225.194:5556",
+    "1.12.225.194:5557",
+    "1.12.225.194:5558",
+    "1.12.225.194:5559"
+]
 
-def task():
-    while(1):
-        print("task running !")
-        time.sleep(1)
-
-
-def loop():
+def ServerLoop():
     server.loop()
     while(server.isRunning() == False):
         print("wait server init")
         time.sleep(1)
     server.setAdbPatch(adbPath)
 
+def ConnectDevice():
+    for device in range(deviceNum):
+        deviceName = deviceList[device]
+        print("well be connect : "+ deviceName)
+        NewDevice = server.getLight(deviceName)
+        while(NewDevice.status() == False):
+            print("wait for connect :" + deviceName)
+            time.sleep(1)
+        deviceDict[deviceName] = NewDevice
+        print("device: "+deviceName+" is connected")
 
-def deviceCtl():
-    device = server.getLight(deviceName)
-    while(device.status() == False):
-        print("wait for connect :" + deviceName)
-        time.sleep(1)
-    while(1):
-        device.capture(0,0,720,1280,"C:\\capture.bmp")
-        print(deviceName + " is connected")
-        time.sleep(1)
+def TasksLoop():
+    while(True):
+        print("wait for task !")
+        time.sleep(5)
 
 
 if __name__ == '__main__':
-    loop()
-    deviceCtl()
-    task()
+    ServerLoop()
+    ConnectDevice()
+    TasksLoop()
+

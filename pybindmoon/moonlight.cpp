@@ -1,5 +1,5 @@
 #include "moonlight.h"
-#include "log.hpp"
+#include "../log/log.hpp"
 
 moonlight::moonlight(int _port, int argc, char **argv) : port(_port), mApp(new QCoreApplication(argc, argv)), Running(false)
 {
@@ -55,7 +55,7 @@ light moonlight::getLight(std::string deviceName)
         monitors->pushDevice(device);
         deviceList[deviceN] = device;
         server->pushDevice(dynamic_cast<Device *>(device));
-        logs::info("new device: " + deviceName);
+        logs::info("new device: " + deviceName +" well be connect");
     }
     return light(deviceList[deviceN]);
 }
