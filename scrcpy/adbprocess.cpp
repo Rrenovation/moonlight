@@ -309,7 +309,7 @@ QVector<QStringList> Adbprocess::uiFind(QString text, AutoMator type)
         case AutoMator::TEXT:
             if (!info.at(AutoMator::TEXT).compare(text))
             {
-                qInfo()<<info.at(AutoMator::TEXT);
+                //qInfo()<<info.at(AutoMator::TEXT);
                 ret.push_back(info);
             }
             break;

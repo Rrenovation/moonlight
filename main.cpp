@@ -1,5 +1,6 @@
 ﻿#include <string>
 #include <pybind11/pybind11.h>
+#include <pybind11/stl.h>
 #include "pybindmoon/moonlight.h"
 #include "pybindmoon/light.h"
 namespace py = pybind11;
@@ -50,6 +51,17 @@ PYBIND11_MODULE(moonlight, m)
         .def("idx", &light::idx)
         .def("setPath", &light::setPath)
         .def("getPath", &light::getPath)
+
+        //android-keyCode
+        .def("goHome", &light::goHome)
+        .def("onClear", &light::onClear)
+        
+        //uiAutoMator
+        .def("setAdbPath", &light::setAdbPatch)
+        .def("uiAutoMator", &light::uiAutoMator)
+        .def("uiFind", &light::uiFind)
+        .def("uiGetBounds", &light::uiGetBounds)
+        .def("uiClickBounds", &light::uiClickBounds)
 
         .def("ver", &light::ver),
         "Control Android Object";

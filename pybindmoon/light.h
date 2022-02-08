@@ -3,7 +3,7 @@
 
 #include <string>
 #include "../lewone/lewone.h"
-
+#include "../scrcpy/adbprocess.h"
 using std::string;
 
 class light
@@ -12,7 +12,7 @@ private:
     lewone *lew;
     lwsoft *mlwsoft;
     std::shared_ptr<Action> action;
-
+    std::shared_ptr<Adbprocess> adb;
 public:
     light(lewone *_lew = nullptr);
     ~light();
@@ -56,6 +56,13 @@ public:
 
     //msg:
     string ver();
+
+    //adb UIautomator
+    void setAdbPatch(std::string path);
+    std::vector<std::vector<std::string>> uiAutoMator();
+    std::vector<std::vector<std::string>> uiFind(std::string text, int type = 1);
+    std::vector<std::vector<int>> uiGetBounds(std::string text, int type = 1);
+    bool uiClickBounds(std::string text);
 };
 
 #endif

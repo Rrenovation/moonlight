@@ -2,7 +2,7 @@
 
 #include "../scrcpy/controller/action.h"
 
-light::light(lewone *_lew) 
+light::light(lewone *_lew) : adb(new Adbprocess())
 {
     lew = _lew;
     mlwsoft = lew->getObj();
@@ -11,7 +11,6 @@ light::light(lewone *_lew)
 
 light::~light()
 {
-
 }
 
 bool light::status()
@@ -183,4 +182,75 @@ string light::getPath()
 string light::ver()
 {
     return "0.0.1";
+}
+
+void light::setAdbPatch(std::string path)
+{
+    adb->setAdbPatch(QString::fromStdString(path));
+    adb->setSerial(lew->getDeviceName());
+}
+
+std::vector<std::vector<std::string>> light::uiAutoMator()
+{
+    auto tmp = adb->uiautomator();
+    std::vector<std::vector<std::string>> ret;
+    for (auto uilist : tmp)
+    {
+        std::vector<std::string> list;
+        for (auto ui : uilist)
+        {
+            list.push_back(ui.toStdString());
+        }
+        ret.push_back(list);
+    }
+    return ret;
+}
+
+std::vector<std::vector<std::string>> light::uiFind(std::string text, int type)
+{
+    auto tmp = adb->uiFind(QString::fromStdString(text), Adbprocess::TEXT);
+    std::vector<std::vector<std::string>> ret;
+    for (auto uilist : tmp)
+    {
+        std::vector<std::string> list;
+        for (auto ui : uilist)
+        {
+            list.push_back(ui.toStdString());
+        }
+        ret.push_back(list);
+    }
+    return ret;
+}
+
+std::vector<std::vector<int>> light::uiGetBounds(std::string text, int type)
+{
+    auto tmp  = adb->uiGetBounds(QString::fromStdString(text), Adbprocess::TEXT);
+
+    std::vector<std::vector<int>> ret;
+    for (auto uilist : tmp)
+    {
+        std::vector<int> list;
+        for (auto ui : uilist)
+        {
+            list.push_back(ui);
+        }
+        ret.push_back(list);
+    }
+    return ret; 
+}
+
+bool light::uiClickBounds(std::string text)
+{
+    auto tmp = adb->uiGetBounds(QString::fromStdString(text), Adbprocess::TEXT);
+    for (auto uilist : tmp)
+    {
+        if (uilist.size() == 4)
+        {
+            int x = (uilist.at(0) + uilist.at(2)) / 2;
+            int y = (uilist.at(1) + uilist.at(3)) / 2;
+            action->click(QRect(x, y, lew->x(), lew->y()), 0);
+            return true;
+        }
+    }
+    return false;
 }
