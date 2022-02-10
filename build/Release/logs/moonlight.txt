@@ -46,3 +46,21 @@
 [2022-01-28 16:20:05.718] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
 [2022-01-28 16:20:09.140] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
 [2022-01-28 16:20:09.218] [moonlight] [info] 1.12.225.194:5555: connected
+[2022-02-08 14:57:10.658] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-02-08 14:57:10.658] [moonlight] [info] moonlight init !
+[2022-02-08 14:57:10.658] [moonlight] [info] moonlight thread is running !
+[2022-02-08 14:57:10.658] [moonlight] [info] monitor init !
+[2022-02-08 14:57:10.673] [moonlight] [info] monitor thread is running !
+[2022-02-08 14:57:11.737] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
+[2022-02-09 16:39:26.086] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-02-09 16:39:26.149] [moonlight] [info] moonlight init !
+[2022-02-09 16:39:26.368] [moonlight] [info] moonlight thread is running !
+[2022-02-09 16:39:26.368] [moonlight] [info] monitor init !
+[2022-02-09 16:39:26.494] [moonlight] [info] monitor thread is running !
+[2022-02-09 16:39:27.259] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
+[2022-02-09 16:42:58.975] [moonlight] [info] 1.12.225.194:5555 connecting time 59
+[2022-02-09 16:46:31.420] [moonlight] [info] 1.12.225.194:5555 connecting time 58
+[2022-02-09 16:50:03.924] [moonlight] [info] 1.12.225.194:5555 connecting time 57
+[2022-02-09 16:53:36.483] [moonlight] [info] 1.12.225.194:5555 connecting time 56
+[2022-02-09 16:57:08.937] [moonlight] [info] 1.12.225.194:5555 connecting time 55
+[2022-02-09 17:00:41.590] [moonlight] [info] 1.12.225.194:5555 connecting time 54

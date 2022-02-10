@@ -25,11 +25,11 @@ public:
         Ulock();
         return _id;
     }
-    void Lock()
+    inline void Lock()
     {
         mutex->lock();
     }
-    void Ulock()
+    inline void Ulock()
     {
         mutex->unlock();
     }

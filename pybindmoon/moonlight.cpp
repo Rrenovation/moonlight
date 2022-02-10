@@ -20,7 +20,8 @@ void moonlight::loop()
 void moonlight::run()
 {
     logs::info("moonlight thread is running !");
-    server = new Server();
+    // deps processEvents thread
+    server = new Server(); 
     monitors = new monitor();
 
     for (int i = 0; i < 100; i++)
