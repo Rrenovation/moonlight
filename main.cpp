@@ -53,6 +53,7 @@ PYBIND11_MODULE(moonlight, m)
         .def("getPath", &light::getPath)
 
         //android-keyCode
+        .def("key", &light::key)
         .def("goHome", &light::goHome)
         .def("onClear", &light::onClear)
         

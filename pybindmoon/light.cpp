@@ -1,6 +1,7 @@
 #include "light.h"
 
 #include "../scrcpy/controller/action.h"
+#include "../scrcpy/controller/keycodes.h"
 
 light::light(lewone *_lew) : adb(new Adbprocess())
 {
@@ -41,6 +42,10 @@ void light::sendText(string text)
 void light::sendTextEx(string text)
 {
     action->sendTextEx(QString::fromStdString(text));
+}
+void light::key(uint keyCode)
+{
+    action->postKeyCodeClick(static_cast<AndroidKeycode>(keyCode));
 }
 void light::goHome()
 {

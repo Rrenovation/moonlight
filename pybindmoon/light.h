@@ -27,6 +27,8 @@ public:
     void sendText(string text);
     void sendTextEx(string text);
 
+    //android-keybord
+    void key(uint keyCode);
     void goHome();
     void onClear(int num);
 
