@@ -1,66 +1,19 @@
-[2022-01-28 11:51:15.487] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-01-28 11:51:15.487] [moonlight] [info] moonlight init !
-[2022-01-28 11:51:15.488] [moonlight] [info] moonlight thread is running !
-[2022-01-28 11:51:15.488] [moonlight] [info] monitor is init !
-[2022-01-28 11:51:15.498] [moonlight] [info] monitor thread is running !
-[2022-01-28 11:51:16.541] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
-[2022-01-28 11:51:18.313] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
-[2022-01-28 11:51:18.441] [moonlight] [info] 1.12.225.194:5555: connected
-[2022-01-28 12:04:55.811] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-01-28 12:04:55.811] [moonlight] [info] moonlight init !
-[2022-01-28 12:04:55.812] [moonlight] [info] moonlight thread is running !
-[2022-01-28 12:04:55.812] [moonlight] [info] monitor is init !
-[2022-01-28 12:04:55.824] [moonlight] [info] monitor thread is running !
-[2022-01-28 12:04:56.846] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
-[2022-01-28 12:04:58.786] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
-[2022-01-28 12:04:58.894] [moonlight] [info] 1.12.225.194:5555: connected
-[2022-01-28 15:46:58.193] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-01-28 15:46:58.193] [moonlight] [info] moonlight init !
-[2022-01-28 15:46:58.193] [moonlight] [info] moonlight thread is running !
-[2022-01-28 15:46:58.193] [moonlight] [info] monitor is init !
-[2022-01-28 15:46:58.224] [moonlight] [info] monitor thread is running !
-[2022-01-28 15:46:59.208] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
-[2022-01-28 15:47:03.398] [moonlight] [info] 1.12.225.194:5555: connected
-[2022-01-28 15:47:08.401] [moonlight] [info] 1.12.225.194:5555 connecting time 59
-[2022-01-28 15:47:47.326] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-01-28 15:47:47.326] [moonlight] [info] moonlight init !
-[2022-01-28 15:47:47.326] [moonlight] [info] moonlight thread is running !
-[2022-01-28 15:47:47.326] [moonlight] [info] monitor is init !
-[2022-01-28 15:47:47.326] [moonlight] [info] monitor thread is running !
-[2022-01-28 15:47:48.358] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
-[2022-01-28 15:47:49.405] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
-[2022-01-28 15:47:49.499] [moonlight] [info] 1.12.225.194:5555: connected
-[2022-01-28 15:56:46.128] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-01-28 15:56:46.128] [moonlight] [info] moonlight init !
-[2022-01-28 15:56:46.128] [moonlight] [info] moonlight thread is running !
-[2022-01-28 15:56:46.128] [moonlight] [info] monitor init !
-[2022-01-28 15:56:46.175] [moonlight] [info] monitor thread is running !
-[2022-01-28 15:56:47.191] [moonlight] [info] new device: 1.12.225.194:5555 well be connect
-[2022-01-28 15:56:49.692] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
-[2022-01-28 15:56:49.708] [moonlight] [info] 1.12.225.194:5555: connected
-[2022-01-28 16:20:04.625] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-01-28 16:20:04.625] [moonlight] [info] moonlight init !
-[2022-01-28 16:20:04.625] [moonlight] [info] moonlight thread is running !
-[2022-01-28 16:20:04.625] [moonlight] [info] monitor init !
-[2022-01-28 16:20:04.656] [moonlight] [info] monitor thread is running !
-[2022-01-28 16:20:05.718] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
-[2022-01-28 16:20:09.140] [moonlight] [info] New 1.12.225.194:5555 Width: 720 Height: 1280 connected !
-[2022-01-28 16:20:09.218] [moonlight] [info] 1.12.225.194:5555: connected
-[2022-02-08 14:57:10.658] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-02-08 14:57:10.658] [moonlight] [info] moonlight init !
-[2022-02-08 14:57:10.658] [moonlight] [info] moonlight thread is running !
-[2022-02-08 14:57:10.658] [moonlight] [info] monitor init !
-[2022-02-08 14:57:10.673] [moonlight] [info] monitor thread is running !
-[2022-02-08 14:57:11.737] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
-[2022-02-09 16:39:26.086] [moonlight] [info] Welcome to spdlog version 1.9.2  !
-[2022-02-09 16:39:26.149] [moonlight] [info] moonlight init !
-[2022-02-09 16:39:26.368] [moonlight] [info] moonlight thread is running !
-[2022-02-09 16:39:26.368] [moonlight] [info] monitor init !
-[2022-02-09 16:39:26.494] [moonlight] [info] monitor thread is running !
-[2022-02-09 16:39:27.259] [moonlight] [info] New device: 1.12.225.194:5555 well be connect
-[2022-02-09 16:42:58.975] [moonlight] [info] 1.12.225.194:5555 connecting time 59
-[2022-02-09 16:46:31.420] [moonlight] [info] 1.12.225.194:5555 connecting time 58
-[2022-02-09 16:50:03.924] [moonlight] [info] 1.12.225.194:5555 connecting time 57
-[2022-02-09 16:53:36.483] [moonlight] [info] 1.12.225.194:5555 connecting time 56
-[2022-02-09 16:57:08.937] [moonlight] [info] 1.12.225.194:5555 connecting time 55
-[2022-02-09 17:00:41.590] [moonlight] [info] 1.12.225.194:5555 connecting time 54
+[2022-03-29 17:32:49.273] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-03-29 17:32:49.275] [moonlight] [info] moonlight init !
+[2022-03-29 17:38:02.052] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-03-29 17:38:02.055] [moonlight] [info] moonlight init !
+*** [09:44:53 +08:00] [thread 164532] Welcome to spdlog version 1.9.2  ! ***
+*** [09:44:53 +08:00] [thread 164532] moonlight init ! ***
+*** [09:44:53 +08:00] [thread 168816] moonlight thread is running ! ***
+*** [09:44:53 +08:00] [thread 168816] monitor init ! ***
+*** [09:44:53 +08:00] [thread 172148] monitor thread is running ! ***
+[2022-03-30 09:49:21.881] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-03-30 09:49:21.881] [moonlight] [info] moonlight init !
+[2022-03-30 09:49:21.882] [moonlight] [info] moonlight thread is running !
+[2022-03-30 09:49:21.883] [moonlight] [info] monitor init !
+[2022-03-30 09:49:21.929] [moonlight] [info] monitor thread is running !
+[2022-03-30 09:49:27.005] [moonlight] [info] Welcome to spdlog version 1.9.2  !
+[2022-03-30 09:49:27.006] [moonlight] [info] moonlight init !
+[2022-03-30 09:49:27.008] [moonlight] [info] moonlight thread is running !
+[2022-03-30 09:49:27.008] [moonlight] [info] monitor init !
+[2022-03-30 09:49:27.016] [moonlight] [info] monitor thread is running !

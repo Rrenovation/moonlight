@@ -9,7 +9,13 @@ moonlight::moonlight(int _port, int argc, char **argv) : port(_port), mApp(new Q
 moonlight::~moonlight()
 {
     exit();
-    wait();
+    mApp->quit();
+    if (!wait(2000))
+    {
+        terminate();
+    }
+    spdlog::drop_all();
+    spdlog::shutdown();
 }
 
 void moonlight::loop()
@@ -46,7 +52,7 @@ bool moonlight::isRunning() const
     return Running;
 }
 
-light moonlight::getLight(std::string deviceName)
+light moonlight::getLight(std::string deviceName) 
 {
     auto deviceN = QString::fromStdString(deviceName);
     if (deviceList.find(deviceN) == deviceList.end())

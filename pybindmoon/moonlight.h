@@ -10,7 +10,6 @@
 
 class moonlight : public QThread
 {
-    Q_OBJECT
 private:
     QPointer<QCoreApplication> mApp;
     QMap<QString, QPointer<lewone>> deviceList;

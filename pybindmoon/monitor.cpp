@@ -9,8 +9,11 @@ monitor::monitor(/* args */) : MianthreadExit(false)
 monitor::~monitor()
 {
     MianthreadExit = true;
-    quit();
-    wait();
+    exit();
+    if (!wait(2000))
+    {
+        terminate();
+    }
     for (auto adb : adbList)
     {
         adb->terminate();
